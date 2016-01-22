@@ -1,0 +1,16 @@
+{% if status_list %}
+    <ul>
+    {% for status in status_list %}
+        <li>{{ status.status_name }}</li>
+            <ul>
+                {% for task in task_list %}
+                    {% if task.status.status_name == status.status_name %}
+                        <li>{{ task.task_name }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No statuses to display.</p>
+{% endif %}

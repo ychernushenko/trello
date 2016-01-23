@@ -97,6 +97,23 @@
         console.log(ui.item.data("id"));
         console.log(ui.item.context.parentNode.id);
         
+        $.ajax({
+                url : "/trello/update_pos", 
+                type : "POST",
+                dataType: "json", 
+                data : {
+                    task_id : ui.item.data("id"),
+                    status_id: ui.item.context.parentNode.id,
+                    csrfmiddlewaretoken: '{{ csrf_token }}',
+                },
+                success : function(json) {
+                    console.log("Saved position update: " + json.status);
+                },
+                error : function(xhr,errmsg,err) {
+                    console.log("Error position update: " + xhr.status + ": " + xhr.responseText);
+                }
+        });
+
     },
       placeholder: "portlet-placeholder ui-corner-all"
     });

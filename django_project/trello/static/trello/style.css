@@ -1,0 +1,14 @@
+.section { 
+	display: block; 
+	width: 400px; 
+	height: 900px; 
+	float: left; 
+	margin-left: 20px; 
+	opacity: .6; 
+	border-radius: 6px; 
+}
+
+.blue { background-color: #06F; }
+.green { background-color: #0f9d00; }
+.red { background-color: #F00; }
+.yellow { background-color: #ffea00; }

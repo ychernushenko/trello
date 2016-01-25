@@ -1,14 +1,73 @@
-.section { 
-	display: block; 
-	width: 400px; 
-	height: 900px; 
-	float: left; 
-	margin-left: 20px; 
-	opacity: .6; 
-	border-radius: 6px; 
+.column {
+        display: block;
+        width: 300px;
+        height: 900px;
+        float: left;
+        margin-left: 20px;
+        padding-top: 20px;
+        opacity: .6;
+        border-radius: 6px;
+        text-align: center;
+        background-color: #06F;
+
 }
 
-.blue { background-color: #06F; }
-.green { background-color: #0f9d00; }
+.portlet {
+        display: block;
+        width: 250px;
+        height: 50px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-radius: 6px;
+        text-align: center;
+}
+
+.portlet-header {
+        width: 99%;
+        height: 15px;
+}
+
+.status-name {
+        color: #ffea00;
+        font-weight: bold;
+        font-size: 20px;
+}
+
+.task-name {
+        margin-top: 20px;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+}
+
+#container {
+        width: 10000px;
+}
+
 .red { background-color: #F00; }
-.yellow { background-color: #ffea00; }
+
+.tilt {
+        transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+}
+
+.portlet-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -8px;
+}
+
+.portlet-placeholder {
+        border: 1px dotted black;
+        width: 250px;
+        height: 50px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding-top: 20px;
+        border-radius: 6px;
+        background-color: #0f9d00;
+}

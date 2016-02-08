@@ -1,10 +1,10 @@
-#Simple version of Trello Web Application
+##Simple version of Trello Web Application
 
 ###Requirements
 1. Allow edit/create/delete Status entity in the admin page
-  * 1.1. Status has only one field - name
-  * 1.2. Name value could be only one of (New/InProgress/OnReview/Tested/Delivered)
-  * 1.3. Names should be unique. If user try's to create Status that already exists he should get an error - "Данный статус уже существует" (RUS - "This status already exists")
+⋅⋅1. Status has only one field - name
+⋅⋅1. Name value could be only one of (New/InProgress/OnReview/Tested/Delivered)
+⋅⋅1. Names should be unique. If user try's to create Status that already exists he should get an error - "Данный статус уже существует" (RUS - "This status already exists")
 
 2. In Admin page you can edit/create/delete Task entity
   * 2.1. Task has field name, which can not be empty

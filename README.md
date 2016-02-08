@@ -4,7 +4,7 @@
 1. Allow edit/create/delete Status entity in the admin page
   * Status has only one field - name
   * Name value could be only one of (New/InProgress/OnReview/Tested/Delivered)
-  * Names should be unique. If user try's to create Status that already exists he should get an error - "Данный статус уже существует" (RUS - "This status already exists")
+  * Names should be unique. If user try's to create Status that already exists he should get an error - RUS "Данный статус уже существует" (ENG - "This status already exists")
 
 2. In Admin page you can edit/create/delete Task entity
   * Task has field name, which can not be empty

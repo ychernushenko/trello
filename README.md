@@ -1,7 +1,6 @@
-# trello
-Simple trello version. Create Trello Web Application
+#Simple version of Trello Web Application
 
-##Requirements
+###Requirements
 1. Allow edit/create/delete Status entity in the admin page
 1.1. Status has only one field - name
 1.2. Name value could be only one of (New/InProgress/OnReview/Tested/Delivered)
